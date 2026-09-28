@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 760">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <style>
+      text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif; }
+      .title { fill:#f8fafc; font-size:28px; font-weight:700; }
+      .subtitle { fill:#94a3b8; font-size:16px; }
+      .heading { fill:#f8fafc; font-size:21px; font-weight:700; }
+      .period { font-size:33px; font-weight:700; }
+      .body { fill:#cbd5e1; font-size:15px; }
+      .small { fill:#94a3b8; font-size:13px; }
+      .label { font-size:13px; font-weight:700; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="760" fill="#0f172a"/>
+  <rect width="1400" height="760" fill="url(#grid)"/>
+  <text x="60" y="66" class="title">三种余额，三套有效期</text>
+  <text x="60" y="98" class="subtitle">BitCash 券、My BitCash 会员余额、DLsite / viviON 账户点数要分别看期限。</text>
+
+  <rect x="55" y="142" width="400" height="468" rx="22" fill="#0f172a"/>
+  <rect x="55" y="142" width="400" height="468" rx="22" fill="rgba(120,53,15,0.28)" stroke="#fbbf24" stroke-width="1.8"/>
+  <text x="90" y="191" class="heading">BitCash 券码</text>
+  <rect x="90" y="217" width="330" height="88" rx="15" fill="rgba(120,53,15,0.42)" stroke="#fbbf24" stroke-width="1"/>
+  <text x="255" y="274" class="period" fill="#fcd34d" text-anchor="middle">购买后 1 年</text>
+  <text x="90" y="346" class="body">2026-04-01 起陆续发行的新券，</text>
+  <text x="90" y="372" class="body">有效期从购买日开始计算。</text>
+  <text x="90" y="410" class="body">余额转入另一张可接收的券后，</text>
+  <text x="90" y="436" class="body">接收券从转入日起更新为 1 年。</text>
+  <line x1="90" y1="477" x2="420" y2="477" stroke="#475569"/>
+  <text x="90" y="513" class="label" fill="#fde68a">查券码余额页显示的具体到期日</text>
+  <text x="90" y="548" class="small">实体券或第三方交付的码要看券种与发行时间。</text>
+
+  <rect x="500" y="142" width="400" height="468" rx="22" fill="#0f172a"/>
+  <rect x="500" y="142" width="400" height="468" rx="22" fill="rgba(6,78,59,0.3)" stroke="#34d399" stroke-width="1.8"/>
+  <text x="535" y="191" class="heading">My BitCash</text>
+  <rect x="535" y="217" width="330" height="88" rx="15" fill="rgba(6,78,59,0.42)" stroke="#34d399" stroke-width="1"/>
+  <text x="700" y="274" class="period" fill="#6ee7b7" text-anchor="middle">最后充值后 3 年</text>
+  <text x="535" y="346" class="body">会员专用余额；海外访客可通过</text>
+  <text x="535" y="372" class="body">官网 Alipay+ 流程充值到此账户。</text>
+  <text x="535" y="410" class="body">每次充值都会从充值日重新计算</text>
+  <text x="535" y="436" class="body">3 年，不是把剩余时间累加。</text>
+  <line x1="535" y1="477" x2="865" y2="477" stroke="#475569"/>
+  <text x="535" y="513" class="label" fill="#a7f3d0">在 BitCash 会员页查看有效期</text>
+  <text x="535" y="548" class="small">充值前确认余额已进入自己的 My BitCash。</text>
+
+  <rect x="945" y="142" width="400" height="468" rx="22" fill="#0f172a"/>
+  <rect x="945" y="142" width="400" height="468" rx="22" fill="rgba(76,29,149,0.3)" stroke="#a78bfa" stroke-width="1.8"/>
+  <text x="980" y="191" class="heading">DLsite / viviON 点数</text>
+  <rect x="980" y="217" width="330" height="88" rx="15" fill="rgba(76,29,149,0.48)" stroke="#a78bfa" stroke-width="1"/>
+  <text x="1145" y="274" class="period" fill="#c4b5fd" text-anchor="middle">最后取得或使用后 1 年</text>
+  <text x="980" y="346" class="body">到期前再取得点数，或用掉</text>
+  <text x="980" y="372" class="body">至少 1 点，可重新延长 1 年。</text>
+  <text x="980" y="410" class="body">只用银行卡买作品不算用点数，</text>
+  <text x="980" y="436" class="body">因此不会延长账户点数期限。</text>
+  <line x1="980" y1="477" x2="1310" y2="477" stroke="#475569"/>
+  <text x="980" y="513" class="label" fill="#ddd6fe">在 DLsite 个人主页查看点数履历</text>
+  <text x="980" y="548" class="small">2021-03-31 前购入的旧点数以履历为准。</text>
+
+  <rect x="55" y="642" width="1290" height="74" rx="17" fill="#0f172a"/>
+  <rect x="55" y="642" width="1290" height="74" rx="17" fill="rgba(30,41,59,0.72)" stroke="#94a3b8" stroke-width="1.3"/>
+  <text x="700" y="674" fill="#e2e8f0" font-size="16" font-weight="700" text-anchor="middle">延长的是各自账户中的余额期限；BitCash 的 3 年不等于 DLsite 点数也有 3 年。</text>
+  <text x="700" y="699" class="small" text-anchor="middle">到期日期可能因券种、充值时间和账户中点数类型不同而不同，最终以各平台余额页为准。</text>
+</svg>

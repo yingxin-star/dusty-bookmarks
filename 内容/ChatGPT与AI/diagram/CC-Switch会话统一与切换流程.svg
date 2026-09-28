@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1190">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0 0L10 4L0 8Z" fill="#64748b"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0 0L10 4L0 8Z" fill="#60a5fa"/>
+    </marker>
+    <style>
+      text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif; }
+      .title { fill:#f8fafc; font-size:27px; font-weight:700; }
+      .subtitle { fill:#94a3b8; font-size:15px; }
+      .phase { fill:#fbbf24; font-size:17px; font-weight:700; }
+      .step-title { fill:#f8fafc; font-size:19px; font-weight:700; }
+      .body { fill:#cbd5e1; font-size:15px; }
+      .small { fill:#94a3b8; font-size:13px; }
+      .badge { fill:#0f172a; font-size:13px; font-weight:700; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="1190" fill="#0f172a"/>
+  <rect width="1200" height="1190" fill="url(#grid)"/>
+
+  <text x="60" y="62" class="title">CC Switch：先统一 Codex 会话，再按需切换计费来源</text>
+  <text x="60" y="91" class="subtitle">统一历史是一次性初始化；完成后，官方订阅与第三方 API 共用同一会话列表。</text>
+
+  <text x="60" y="132" class="phase">一次性初始化：把两边的 Codex 会话放进共享历史</text>
+
+  <path d="M600 275V314" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M600 435V474" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M600 587V626" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="80" y="153" width="1040" height="122" rx="18" fill="#0f172a"/>
+  <rect x="80" y="153" width="1040" height="122" rx="18" fill="rgba(8,51,68,0.46)" stroke="#22d3ee" stroke-width="1.8"/>
+  <circle cx="119" cy="192" r="18" fill="#083344" stroke="#22d3ee"/>
+  <text x="119" y="197" class="badge" text-anchor="middle">1</text>
+  <text x="155" y="194" class="step-title">在 CC Switch 准备统一历史</text>
+  <text x="155" y="224" class="body">选择 OpenAI Official；开启“非接管切换时保留官方登录”和“统一 Codex 会话历史”。</text>
+  <text x="155" y="251" class="small">要把旧的官方会话也合并进来，再勾选“同时迁入现有官方会话历史”。</text>
+
+  <rect x="80" y="314" width="1040" height="121" rx="18" fill="#0f172a"/>
+  <rect x="80" y="314" width="1040" height="121" rx="18" fill="rgba(6,78,59,0.38)" stroke="#34d399" stroke-width="1.8"/>
+  <circle cx="119" cy="353" r="18" fill="#064e3b" stroke="#34d399"/>
+  <text x="119" y="358" class="badge" text-anchor="middle">2</text>
+  <text x="155" y="355" class="step-title">重启两个应用，完成官方登录</text>
+  <text x="155" y="386" class="body">完全退出并重开 CC Switch，再打开 ChatGPT.app；按提示登录自己的官方 ChatGPT 账号。</text>
+  <text x="155" y="413" class="small">登录后退出 ChatGPT.app，让官方登录状态写入本机。</text>
+
+  <rect x="80" y="474" width="1040" height="113" rx="18" fill="#0f172a"/>
+  <rect x="80" y="474" width="1040" height="113" rx="18" fill="rgba(6,78,59,0.28)" stroke="#34d399" stroke-width="1.8"/>
+  <circle cx="119" cy="513" r="18" fill="#064e3b" stroke="#34d399"/>
+  <text x="119" y="518" class="badge" text-anchor="middle">3</text>
+  <text x="155" y="515" class="step-title">切回中转供应商，确认共享会话</text>
+  <text x="155" y="546" class="body">需要本地路由时先启动并接管；完全退出、重启 CC Switch 与 ChatGPT.app。</text>
+  <text x="155" y="573" class="small">在 Codex 列表确认官方会话和中转会话都出现。</text>
+
+  <rect x="80" y="626" width="1040" height="78" rx="18" fill="#0f172a"/>
+  <rect x="80" y="626" width="1040" height="78" rx="18" fill="rgba(76,29,149,0.35)" stroke="#a78bfa" stroke-width="1.8"/>
+  <text x="600" y="659" fill="#f8fafc" font-size="18" font-weight="700" text-anchor="middle">初始化完成：官方与第三方会话共用 custom 历史分类</text>
+  <text x="600" y="684" class="small" text-anchor="middle">这一步完成后，日常只需选择要使用的模型来源。</text>
+
+  <text x="60" y="753" class="phase">之后按需切换：选择当前要使用的额度 / API</text>
+
+  <path d="M600 704V778H322V810" fill="none" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <path d="M600 778H878V810" fill="none" stroke="#34d399" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <rect x="70" y="810" width="510" height="254" rx="20" fill="#0f172a"/>
+  <rect x="70" y="810" width="510" height="254" rx="20" fill="rgba(30,64,175,0.28)" stroke="#60a5fa" stroke-width="1.8"/>
+  <text x="105" y="852" fill="#93c5fd" font-size="20" font-weight="700">A · 使用 ChatGPT Plus / Pro</text>
+  <text x="105" y="891" class="body">1. CC Switch 选择 OpenAI Official</text>
+  <text x="105" y="920" class="body">2. 重启 CC Switch 与 ChatGPT.app</text>
+  <text x="105" y="949" class="body">3. 登录或确认已登录官方账号</text>
+  <line x1="105" y1="972" x2="545" y2="972" stroke="#334155"/>
+  <text x="105" y="1002" fill="#bfdbfe" font-size="15" font-weight="600">请求使用 Plus / Pro 订阅额度</text>
+  <text x="105" y="1032" class="small">会话仍在共享的 custom 历史中</text>
+
+  <rect x="620" y="810" width="510" height="254" rx="20" fill="#0f172a"/>
+  <rect x="620" y="810" width="510" height="254" rx="20" fill="rgba(6,78,59,0.3)" stroke="#34d399" stroke-width="1.8"/>
+  <text x="655" y="852" fill="#6ee7b7" font-size="20" font-weight="700">B · 使用中转服务商 API</text>
+  <text x="655" y="891" class="body">1. CC Switch 选择原来的供应商</text>
+  <text x="655" y="920" class="body">2. 如需路由，启动并启用 Codex 接管</text>
+  <text x="655" y="949" class="body">3. 重启 CC Switch 与 ChatGPT.app</text>
+  <line x1="655" y1="972" x2="1095" y2="972" stroke="#334155"/>
+  <text x="655" y="1002" fill="#a7f3d0" font-size="15" font-weight="600">请求按供应商 API Key 与账单计费</text>
+  <text x="655" y="1032" class="small">会话仍在共享的 custom 历史中</text>
+
+  <rect x="70" y="1090" width="1060" height="66" rx="15" fill="#0f172a"/>
+  <rect x="70" y="1090" width="1060" height="66" rx="15" fill="rgba(120,53,15,0.25)" stroke="#fbbf24" stroke-width="1.4"/>
+  <text x="600" y="1120" fill="#fde68a" font-size="15" font-weight="700" text-anchor="middle">计费来源看 CC Switch 当前供应商与路由状态</text>
+  <text x="600" y="1143" class="small" text-anchor="middle">应用显示官方账号，不等于当前模型请求一定走官方订阅。</text>
+</svg>

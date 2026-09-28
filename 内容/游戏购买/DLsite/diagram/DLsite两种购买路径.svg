@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1060">
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#1e293b" stroke-width="0.6"/>
+    </pattern>
+    <marker id="arrow-cyan" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0 0L10 4L0 8Z" fill="#22d3ee"/>
+    </marker>
+    <marker id="arrow-blue" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0 0L10 4L0 8Z" fill="#60a5fa"/>
+    </marker>
+    <style>
+      text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif; }
+      .title { fill:#f8fafc; font-size:28px; font-weight:700; }
+      .subtitle { fill:#94a3b8; font-size:16px; }
+      .lane { fill:#fbbf24; font-size:19px; font-weight:700; }
+      .box-title { fill:#f8fafc; font-size:19px; font-weight:700; }
+      .body { fill:#cbd5e1; font-size:15px; }
+      .small { fill:#94a3b8; font-size:13px; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="1060" fill="#0f172a"/>
+  <rect width="1400" height="1060" fill="url(#grid)"/>
+  <text x="60" y="66" class="title">DLsite 两种购买路径</text>
+  <text x="60" y="98" class="subtitle">BitCash 可先换成 viviON 点数再结账；银行卡也可以直接购买作品。</text>
+
+  <rect x="50" y="132" width="1300" height="584" rx="24" fill="none" stroke="#22d3ee" stroke-width="1.5" stroke-dasharray="9 6"/>
+  <text x="76" y="169" class="lane">路径 A · BitCash 官网 Alipay+ 充值 → DLsite 点数</text>
+
+  <path d="M338 413H380" fill="none" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrow-cyan)"/>
+  <path d="M658 413H700" fill="none" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrow-cyan)"/>
+  <path d="M978 413H1020" fill="none" stroke="#22d3ee" stroke-width="2" marker-end="url(#arrow-cyan)"/>
+
+  <rect x="76" y="202" width="262" height="422" rx="18" fill="#0f172a"/>
+  <rect x="76" y="202" width="262" height="422" rx="18" fill="rgba(8,51,68,0.48)" stroke="#22d3ee" stroke-width="1.7"/>
+  <circle cx="111" cy="240" r="18" fill="#083344" stroke="#22d3ee"/>
+  <text x="111" y="245" fill="#e0f2fe" font-size="14" font-weight="700" text-anchor="middle">1</text>
+  <text x="145" y="247" class="box-title">BitCash Members</text>
+  <text x="102" y="294" class="body">登录 BitCash Members</text>
+  <text x="102" y="322" class="body">选择“充值”</text>
+  <text x="102" y="350" class="body">For visitors from abroad</text>
+  <text x="102" y="378" class="body">选金额，再进入 Alipay+</text>
+  <text x="102" y="406" class="body">再选页面提供的钱包</text>
+  <line x1="102" y1="499" x2="312" y2="499" stroke="#334155"/>
+  <text x="102" y="533" fill="#a5f3fc" font-size="14" font-weight="600">官方海外充值流程</text>
+  <text x="102" y="558" class="small">可用钱包以结账页为准</text>
+
+  <rect x="396" y="202" width="262" height="422" rx="18" fill="#0f172a"/>
+  <rect x="396" y="202" width="262" height="422" rx="18" fill="rgba(6,78,59,0.42)" stroke="#34d399" stroke-width="1.7"/>
+  <circle cx="431" cy="240" r="18" fill="#064e3b" stroke="#34d399"/>
+  <text x="431" y="245" fill="#d1fae5" font-size="14" font-weight="700" text-anchor="middle">2</text>
+  <text x="465" y="247" class="box-title">My BitCash</text>
+  <text x="422" y="294" class="body">Alipay+ 充值进入</text>
+  <text x="422" y="322" class="body">BitCash 会员余额</text>
+  <text x="422" y="367" class="body">从会员页查看专属</text>
+  <text x="422" y="395" class="body">16 位平假名 ID</text>
+  <line x1="422" y1="499" x2="632" y2="499" stroke="#334155"/>
+  <text x="422" y="533" fill="#a7f3d0" font-size="14" font-weight="600">有效期：最后充值后 3 年</text>
+  <text x="422" y="558" class="small">每次充值会重新计算 3 年</text>
+
+  <rect x="716" y="202" width="262" height="422" rx="18" fill="#0f172a"/>
+  <rect x="716" y="202" width="262" height="422" rx="18" fill="rgba(76,29,149,0.38)" stroke="#a78bfa" stroke-width="1.7"/>
+  <circle cx="751" cy="240" r="18" fill="#4c1d95" stroke="#a78bfa"/>
+  <text x="751" y="245" fill="#ede9fe" font-size="14" font-weight="700" text-anchor="middle">3</text>
+  <text x="785" y="247" class="box-title">购买 DLsite 点数</text>
+  <text x="742" y="294" class="body">个人主页 → 点数购买</text>
+  <text x="742" y="322" class="body">支付方式选择 BitCash</text>
+  <text x="742" y="367" class="body">输入 My BitCash 的</text>
+  <text x="742" y="395" class="body">16 位平假名 ID</text>
+  <line x1="742" y1="499" x2="952" y2="499" stroke="#334155"/>
+  <text x="742" y="533" fill="#ddd6fe" font-size="14" font-weight="600">兑换比例：1 点 = 1 日元</text>
+  <text x="742" y="558" class="small">点数进入 DLsite 账户</text>
+
+  <rect x="1036" y="202" width="262" height="422" rx="18" fill="#0f172a"/>
+  <rect x="1036" y="202" width="262" height="422" rx="18" fill="rgba(120,53,15,0.32)" stroke="#fbbf24" stroke-width="1.7"/>
+  <circle cx="1071" cy="240" r="18" fill="#78350f" stroke="#fbbf24"/>
+  <text x="1071" y="245" fill="#fef3c7" font-size="14" font-weight="700" text-anchor="middle">4</text>
+  <text x="1105" y="247" class="box-title">购买游戏</text>
+  <text x="1062" y="294" class="body">作品加入购物车</text>
+  <text x="1062" y="322" class="body">结账时使用账户点数</text>
+  <text x="1062" y="367" class="body">不足部分按结账页</text>
+  <text x="1062" y="395" class="body">提供的方式补足</text>
+  <line x1="1062" y1="499" x2="1272" y2="499" stroke="#334155"/>
+  <text x="1062" y="533" fill="#fde68a" font-size="14" font-weight="600">点数期限另行计算</text>
+  <text x="1062" y="558" class="small">见下方有效期图解</text>
+
+  <rect x="50" y="754" width="1300" height="244" rx="24" fill="#0f172a"/>
+  <rect x="50" y="754" width="1300" height="244" rx="24" fill="rgba(30,64,175,0.2)" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="76" y="794" fill="#93c5fd" font-size="19" font-weight="700">路径 B · 银行卡在 DLsite 结账页直接支付</text>
+  <path d="M455 883H504" fill="none" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow-blue)"/>
+  <path d="M866 883H915" fill="none" stroke="#60a5fa" stroke-width="2" marker-end="url(#arrow-blue)"/>
+
+  <rect x="76" y="824" width="379" height="120" rx="15" fill="#0f172a" stroke="#60a5fa" stroke-width="1.4"/>
+  <text x="265" y="861" class="box-title" text-anchor="middle">选择信用卡</text>
+  <text x="265" y="893" class="body" text-anchor="middle">从购物车结账页选择银行卡付款</text>
+  <text x="265" y="922" class="small" text-anchor="middle">按提示完成发卡行验证</text>
+
+  <rect x="504" y="824" width="362" height="120" rx="15" fill="#0f172a" stroke="#60a5fa" stroke-width="1.4"/>
+  <text x="685" y="861" class="box-title" text-anchor="middle">作者体验：招商银行 Visa</text>
+  <text x="685" y="893" class="body" text-anchor="middle">本人曾成功付款；结果因卡片和通道而异</text>
+  <text x="685" y="922" class="small" text-anchor="middle">以实际结账页与银行验证结果为准</text>
+
+  <rect x="915" y="824" width="383" height="120" rx="15" fill="#0f172a" stroke="#60a5fa" stroke-width="1.4"/>
+  <text x="1106" y="861" class="box-title" text-anchor="middle">直接购买作品</text>
+  <text x="1106" y="893" class="body" text-anchor="middle">付款成功后作品进入购买记录</text>
+  <text x="1106" y="922" class="small" text-anchor="middle">不会先生成 DLsite 点数余额</text>
+
+  <text x="700" y="974" class="small" text-anchor="middle">BitCash 官方指南提供海外访客的 Alipay+ 流程；支付宝是否出现在钱包选项中，以该笔结账页显示为准。</text>
+</svg>
